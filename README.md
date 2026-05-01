@@ -51,12 +51,6 @@ We practiced committing regularly and used clear commit messages to keep the pro
 - Basic web development structure
 - How version control improves workflow
 
-## 🚀 Live Demo
-https://yourusername.github.io/fixci-github-project/
-
-## 🔗 Repository Link
-https://github.com/yourusername/fixci-github-project
-
 ## 🚀 Future Improvements
 - Add user authentication (login/signup)
 - Connect to a backend (Flask or database)
