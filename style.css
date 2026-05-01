@@ -408,4 +408,112 @@ footer p {
     gap: 20px;
     text-align: center;
   }
+} 
+
+/* Chatbot Upgrade */
+
+#chat-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #ff8200;
+  color: white;
+  font-size: 22px;
+  padding: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+#chat-btn:hover {
+  transform: scale(1.1);
+}
+
+#chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+#chat-box.open {
+  display: flex;
+}
+
+.chat-header {
+  background: #00843d;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Message bubbles */
+.user-msg, .bot-msg {
+  max-width: 75%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+.user-msg {
+  background: #00843d;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.bot-msg {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: auto;
+}
+
+/* Typing animation */
+.typing {
+  font-style: italic;
+  color: #888;
+  margin: 5px 0;
+}
+
+.chat-input-box {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+.chat-input-box button {
+  background: #00843d;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(5px);}
+  to {opacity: 1; transform: translateY(0);}
 }
